@@ -27,27 +27,31 @@ applied to all prices.
 
 ## Visual Components
 
-| Class           | Description          | Tag    | Element(s)                     |
-| --------------- | -------------------- | ------ | ------------------------------ |
-| wrapper         | contents wrapper     | div    | components                     |
-| intro           | header and details   | header | h1 p                           |
-| ipc             | card                 | div    | slider cta                     |
-| slider          | panel                | div    | slider_pricing slider_controls |
-|                 |                      |        | slider_toggle                  |
-| slider_prices   | price ranges         | ul     | price                          |
-| slider_price    | a price range        | ul     | pages cost                     |
-| slider_controls | slider controls      | div    | ??                             |
-| slider_toggle   | toggle panel         | div    | p toggle_button p span         |
-| cta             | call to action panel | div    | ul button                      |
+| Class              | Description          | Tag    | Element(s)                          |
+| ------------------ | -------------------- | ------ | ----------------------------------- |
+| wrapper            | contents wrapper     | div    | components                          |
+| intro              | header and details   | header | h1 p                                |
+| ipc                | card                 | div    | slider cta                          |
+| ipc-Slider         | panel                | div    | ipc-SliderPrices ipc-SliderControls |
+|                    |                      |        | ipc-SliderToggle                    |
+| ipc-SliderPrices   | price ranges         | ul     | ipc-SliderPrices                    |
+| ipc-SliderPrice    | a price range        | ul     | ipc-SliderPrices_pages, \_cost      |
+| ipc-SliderControls | slider controls      | div    | ??                                  |
+| ipc-SliderBilling  | billing panel        | div    | p button p span                     |
+| ipc-CTA            | call to action panel | div    | ul button                           |
 
 - body has a background image
 - the intro has a background image
 - the ipc card has a shadow
 - the slider button has a coloured shadow
 - the slider price range elements are re-ordered on larger screen size so need
-  to keep separate (single element, update with JS? or lists?)
+  to keep separate References
 
-References:
+## Technical
+
+1. how to handle discount pricing? JS to modify cost if yearly billing selected?
+1. how to create the slider?
+1. how to create the toggle?
 
 For slider bar:
 
