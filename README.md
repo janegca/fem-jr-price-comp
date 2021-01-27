@@ -49,4 +49,11 @@ applied to all prices.
 
 References:
 
+For slider bar:
+
+- [Horizontal Slider Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html)
+
+For toggle switches:
+
+- [Theme Switching Toggle](https://codepen.io/SaraSoueidan/pen/jpBbrq)
 - [Toggle switch](https://piccalil.li/tutorial/solution-002-toggle-switch)
