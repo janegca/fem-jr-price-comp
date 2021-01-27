@@ -1,0 +1,25 @@
+/* ipc-Intro */
+.ipc-Intro {
+  min-width: 326px;
+  max-width: 395px;
+  margin-bottom: var(--rs-64);
+  text-align: center;
+}
+
+.ipc-Intro > h1 {
+  margin-bottom: var(--rs-08);
+  font-size: var(--rs-20);
+  font-weight: var(--fw-bold);
+}
+
+.ipc-Intro > div > p {
+  margin-bottom: var(--rs-06);
+  font-size: var(--rs-13);
+}
+
+@media (min-width: 600px) {
+  .ipc-Intro > div > p {
+    display: inline-block;
+    font-size: var(--rs-15);
+  }
+}

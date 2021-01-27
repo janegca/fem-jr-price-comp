@@ -27,25 +27,25 @@ applied to all prices.
 
 ## Visual Components
 
-| Class              | Description          | Tag    | Element(s)                          |
-| ------------------ | -------------------- | ------ | ----------------------------------- |
-| wrapper            | contents wrapper     | div    | components                          |
-| intro              | header and details   | header | h1 p                                |
-| ipc                | card                 | div    | slider cta                          |
-| ipc-Slider         | panel                | div    | ipc-SliderPrices ipc-SliderControls |
-|                    |                      |        | ipc-SliderToggle                    |
-| ipc-SliderPrices   | price ranges         | ul     | ipc-SliderPrices                    |
-| ipc-SliderPrice    | a price range        | ul     | ipc-SliderPrices_pages, \_cost      |
-| ipc-SliderControls | slider controls      | div    | ??                                  |
-| ipc-SliderBilling  | billing panel        | div    | p button p span                     |
-| ipc-CTA            | call to action panel | div    | ul button                           |
+| Class            | Description           | Tag    | Element(s)         |
+| ---------------- | --------------------- | ------ | ------------------ |
+| wrapper          | contents wrapper      | div    | ipc attribution    |
+| ipc              | namespace             | div    | ipc-Intro ipc-Card |
+| ipc-Intro        | header and details    | header | h1 p               |
+| ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*       |
+| ipc-Card_prices  | price ranges          | ul     | ipc-Card_price\*   |
+| ipc-Card_price   | a price range         | li     | p [p span]         |
+| ipc-Card_slider  | slider controls       | div    | ??                 |
+| ipc-Card_billing | billing panel         | div    | p button p span    |
+| ipc-Card_cta     | call to action panel  | div    | ul button          |
 
-- body has a background image
-- the intro has a background image
+- body has a two background images
 - the ipc card has a shadow
 - the slider button has a coloured shadow
 - the slider price range elements are re-ordered on larger screen size so need
   to keep separate References
+- the discount value is a pill
+- give the ipc-Card_cta a top border, full width of card
 
 ## Technical
 
