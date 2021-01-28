@@ -34,7 +34,7 @@ applied to all prices.
 | ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*          |
 | ipc-Card_prices  | price ranges          | ul     | #views #slider #price |
 | ipc-Card_billing | billing panel         | div    | p button p span       |
-| ipc-Card_cta     | call to action panel  | div    | ul button             |
+| ipc-Card_cta     | call to action panel  | div    | [p > img] button      |
 
 - body has a two background images
 - the ipc card has a shadow
@@ -52,6 +52,9 @@ applied to all prices.
      updating using JS, might be a cleaner approach
 1. how to create the slider?
 1. how to create the toggle switch?
+1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as
+   per the design, originally tried using a `ul` but each item would have need
+   custom positioning anyways, making CSS code messier
 
 References:
 

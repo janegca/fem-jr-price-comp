@@ -1,7 +1,8 @@
 /* Styling for the ipc-Card component */
 .ipc-Card {
   width: clamp(var(--width-min), var(--width-avg), var(--width-max));
-  padding: var(--rs-34) var(--rs-24);
+  padding-top: var(--rs-34);
+  padding-bottom: var(--rs-34);
 
   background-color: var(--clr-card);
   border-radius: 8px;
@@ -11,15 +12,47 @@
   text-align: center;
 }
 
-.ipc-Card > * + * {
-  margin-top: var(--rs-34);
-  outline: 1px solid red;
+.ipc-Card > * {
+  padding-left: var(--rs-24);
+  padding-right: var(--rs-24);
 }
 
+.ipc-Card > * + * {
+  margin-top: var(--rs-34);
+}
+
+/* the Pricing section */
 .ipc-Card_prices > p:first-of-type {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
 }
+
+/* the Billing section */
+
+/* the Call to Action section */
+.ipc-Card_cta {
+  border-top: 2px solid var(--clr-slider-bar-empty);
+}
+
+.ipc-Card_cta > * + * {
+  margin-top: var(--rs-10);
+}
+
+.ipc-Card_cta > p:first-of-type {
+  margin-top: var(--rs-24);
+}
+
+.ipc-Card_cta > p > img {
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+}
+
+.ipc-Card_cta > button {
+  margin-top: var(--rs-32);
+}
+
+/* -- Media Queries -- */
 
 @media (min-width: 600px) {
   .ipc-Card {
