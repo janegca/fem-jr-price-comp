@@ -23,7 +23,7 @@
 
 /* the Pricing section */
 .ipc-Card_prices > div {
-  width: 279px;
+  width: 100%;
   line-height: 40px;
 }
 
@@ -81,6 +81,14 @@
 @media (min-width: 600px) {
   .ipc-Card {
     font-size: var(--rs-14);
+  }
+
+  .ipc-Card_prices > p:last-of-type {
+    font-size: var(--rs-16);
+  }
+
+  .ipc-Card_prices > p > strong {
+    font-size: var(--rs-40);
   }
 
   .ipc-Card_cta {
