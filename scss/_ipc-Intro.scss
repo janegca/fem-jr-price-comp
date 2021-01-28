@@ -16,8 +16,10 @@
    */
   margin-top: clamp(5.5625rem, 22.3vw, 6.5rem);
   margin-bottom: var(--rs-08);
+
   font-size: var(--rs-20);
   font-weight: var(--fw-bold);
+  color: var(--clr-cta-bg);
 }
 
 .ipc-Intro > div > p {

@@ -27,16 +27,14 @@ applied to all prices.
 
 ## Visual Components
 
-| Class            | Description           | Tag    | Element(s)         |
-| ---------------- | --------------------- | ------ | ------------------ |
-| ipc              | namespace             | div    | ipc-Intro ipc-Card |
-| ipc-Intro        | header and details    | header | h1 p               |
-| ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*       |
-| ipc-Card_prices  | price ranges          | ul     | ipc-Card_price\*   |
-| ipc-Card_price   | a price range         | li     | p [p span]         |
-| ipc-Card_slider  | slider controls       | div    | ??                 |
-| ipc-Card_billing | billing panel         | div    | p button p span    |
-| ipc-Card_cta     | call to action panel  | div    | ul button          |
+| Class            | Description           | Tag    | Element(s)            |
+| ---------------- | --------------------- | ------ | --------------------- |
+| ipc              | namespace             | div    | ipc-Intro ipc-Card    |
+| ipc-Intro        | header and details    | header | h1 p                  |
+| ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*          |
+| ipc-Card_prices  | price ranges          | ul     | #views #slider #price |
+| ipc-Card_billing | billing panel         | div    | p button p span       |
+| ipc-Card_cta     | call to action panel  | div    | ul button             |
 
 - body has a two background images
 - the ipc card has a shadow
