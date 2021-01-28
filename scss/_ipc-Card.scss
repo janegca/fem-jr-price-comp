@@ -34,15 +34,15 @@
   border-top: 2px solid var(--clr-slider-bar-empty);
 }
 
-.ipc-Card_cta > * + * {
+.ipc-Card_cta > div > * + * {
   margin-top: var(--rs-10);
 }
 
-.ipc-Card_cta > p:first-of-type {
+.ipc-Card_cta > div > p:first-of-type {
   margin-top: var(--rs-24);
 }
 
-.ipc-Card_cta > p > img {
+.ipc-Card_cta > div > p > img {
   width: 1em;
   height: 1em;
   margin-right: 1em;
@@ -57,5 +57,12 @@
 @media (min-width: 600px) {
   .ipc-Card {
     font-size: var(--rs-14);
+  }
+
+  .ipc-Card_cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
   }
 }
