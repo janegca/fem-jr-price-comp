@@ -47,9 +47,10 @@ applied to all prices.
 ## Technical
 
 1. how to handle discount pricing?
-   - JS to modify cost if yearly billing selected?
-   - debating whether or not I should just set up one element and do all the
-     updating using JS, might be a cleaner approach
+   - JS to modify cost if yearly billing selected
+   - JS to update the `views` and `price` when the slider is moved
+   - JS to add/remove the `visually-hidden` class on the span holding the word
+     _discount_
 1. how to create the slider?
 1. how to create the toggle switch?
 1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as

@@ -43,6 +43,33 @@
 }
 
 /* the Billing section */
+.ipc-Card_billing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ipc-Card_billing > button {
+  width: 43px;
+  height: 22px;
+  outline: 1px solid red;
+}
+
+/* the discount */
+.ipc-Card_billing > p:last-of-type {
+  padding: 2px 7px 3px 8px;
+  border-radius: 1rem;
+
+  background-color: var(--clr-discount-bg);
+
+  font-size: var(--rs-10);
+  font-weight: var(--fw-bold);
+  color: var(--clr-discount-fg);
+}
+
+.ipc-Card_billing > p:last-of-type > span {
+  opacity: 0;
+}
 
 /* the Call to Action section */
 .ipc-Card_cta {
@@ -89,6 +116,10 @@
 
   .ipc-Card_prices > p > strong {
     font-size: var(--rs-40);
+  }
+
+  .ipc-Card_billing > p:last-of-type > span {
+    outline: 1px solid red;
   }
 
   .ipc-Card_cta {
