@@ -49,10 +49,33 @@
   align-items: center;
 }
 
+/* the toggle button */
 .ipc-Card_billing > button {
   width: 43px;
   height: 22px;
-  outline: 1px solid red;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--clr-toggle-bg);
+  cursor: pointer;
+}
+
+/* the toggle */
+.ipc-Card_billing > button span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-left: -4px;
+  border-radius: 50%;
+
+  background-color: var(--clr-card);
+}
+
+.ipc-Card_billing > button:focus {
+  background-color: var(--clr-slider-bg);
+}
+
+.ipc-Card_billing > button:focus span {
+  margin-left: 13px;
 }
 
 /* the discount */

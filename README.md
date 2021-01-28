@@ -65,5 +65,6 @@ For slider bar:
 
 For toggle switches:
 
+- [Toggle Button Switches](https://heydon.github.io/inclusive-components-demos/toggle-buttons/switches.html)
 - [Theme Switching Toggle](https://codepen.io/SaraSoueidan/pen/jpBbrq)
 - [Toggle switch](https://piccalil.li/tutorial/solution-002-toggle-switch)
