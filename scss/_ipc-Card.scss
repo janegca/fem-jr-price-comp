@@ -22,9 +22,24 @@
 }
 
 /* the Pricing section */
+.ipc-Card_prices > div {
+  width: 279px;
+  line-height: 40px;
+}
+
 .ipc-Card_prices > p:first-of-type {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+}
+
+.ipc-Card_prices > p:last-of-type {
+  font-size: var(--rs-14);
+}
+
+.ipc-Card_prices > p > strong {
+  font-size: var(--rs-32);
+  font-weight: var(--fw-bold);
+  color: var(--clr-cta-bg);
 }
 
 /* the Billing section */
