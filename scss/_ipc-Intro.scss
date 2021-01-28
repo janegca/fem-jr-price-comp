@@ -1,7 +1,8 @@
 /* ipc-Intro */
 .ipc-Intro {
-  min-width: 326px;
-  max-width: 395px;
+  width: clamp(var(--width-min), var(--width-avg), var(--width-max));
+  padding-left: 2vw;
+  padding-right: 2vw;
   margin-bottom: var(--rs-64);
   text-align: center;
 }

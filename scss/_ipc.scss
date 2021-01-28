@@ -39,6 +39,15 @@
   --rs-64: 4rem;
 
   --currency: "$";
+
+  /* sizing */
+  /* min: 327px/ 375px = 87.2% or 87.2vw, 327/16 = 20.43rem
+     max: 540px/1440px = 37.5% or 37.5vw, 540/16 = 33.75rem
+     diff: (540-327)/(1440-375) = 15.5% or 15.5vw,
+     avg: 87.2vw - 15.5vw = 71.7vw */
+  --width-min: 20.43rem;
+  --width-max: 33.75rem;
+  --width-avg: 72vw;
 }
 
 h1,
@@ -53,7 +62,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  max-width: 37.5vw;
+  width: clamp(var(--width-min), var(--width-avg), var(--width-max));
 
   font-family: var(--ff-base);
   font-size: var(--rs-15);

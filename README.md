@@ -29,7 +29,6 @@ applied to all prices.
 
 | Class            | Description           | Tag    | Element(s)         |
 | ---------------- | --------------------- | ------ | ------------------ |
-| wrapper          | contents wrapper      | div    | ipc attribution    |
 | ipc              | namespace             | div    | ipc-Intro ipc-Card |
 | ipc-Intro        | header and details    | header | h1 p               |
 | ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*       |
@@ -49,9 +48,14 @@ applied to all prices.
 
 ## Technical
 
-1. how to handle discount pricing? JS to modify cost if yearly billing selected?
+1. how to handle discount pricing?
+   - JS to modify cost if yearly billing selected?
+   - debating whether or not I should just set up one element and do all the
+     updating using JS, might be a cleaner approach
 1. how to create the slider?
-1. how to create the toggle?
+1. how to create the toggle switch?
+
+References:
 
 For slider bar:
 
