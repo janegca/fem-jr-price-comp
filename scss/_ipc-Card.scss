@@ -49,7 +49,16 @@
 }
 
 .ipc-Card_cta > button {
+  width: 170px;
+  height: 41px;
   margin-top: var(--rs-32);
+
+  border-radius: var(--rs-20);
+  background-color: var(--clr-cta-bg);
+
+  font-weight: var(--fw-bold);
+  color: var(--clr-cta-fg);
+  cursor: pointer;
 }
 
 /* -- Media Queries -- */
