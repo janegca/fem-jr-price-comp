@@ -47,13 +47,23 @@
 }
 
 .ipc-Card_prices .slider_rail {
+  /* JS will be used to update the gradient-stop 
+     point for the slider background fill 
+   */
+  --gradient-stop: 50%;
+
   position: relative;
   width: 100%;
   height: 8px;
   margin: var(--rs-16) 0;
 
   border-radius: 10px;
-  background-color: var(--clr-slider-bar-empty);
+
+  background: linear-gradient(
+    to right,
+    var(--clr-slider-bar-full) var(--gradient-stop),
+    var(--clr-slider-bar-empty) calc(100% - var(--gradient-stop))
+  );
 }
 
 .ipc-Card_prices .slider_thumb {
