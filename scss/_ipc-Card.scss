@@ -141,11 +141,15 @@
   background-color: var(--clr-card);
 }
 
-.ipc-Card_billing > button:focus {
+.ipc-Card_billing > button:hover {
   background-color: var(--clr-slider-bg);
 }
 
-.ipc-Card_billing > button:focus span {
+.ipc-Card_billing > button[aria-checked="true"] {
+  background-color: var(--clr-slider-bg);
+}
+
+.ipc-Card_billing > button[aria-checked="true"] span {
   margin-left: 13px;
 }
 
