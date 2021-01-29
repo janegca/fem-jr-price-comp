@@ -67,6 +67,9 @@
 }
 
 .ipc-Card_prices .slider_thumb {
+  --shadow-color: 0px 15px 30px 0px var(--clr-slider-bg);
+  --shadow-neutral: 0px 20px 30px -5px hsla(230, 29%, 61%, 0.152);
+
   position: absolute;
   left: 45%;
 
@@ -76,8 +79,10 @@
 
   border-radius: 50%;
   background-color: var(--clr-slider-bg);
+  box-shadow: var(--shadow-color), var(--shadow-neutral);
 
   transform: translateY(-46%);
+  cursor: pointer;
 }
 
 .ipc-Card_prices .slider .arrow {
@@ -104,6 +109,7 @@
 
 /* the price */
 .ipc-Card_prices > p:last-of-type {
+  margin-top: var(--rs-24);
   font-size: var(--rs-14);
 }
 
