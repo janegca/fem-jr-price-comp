@@ -63,6 +63,8 @@ References:
 
 For slider bar:
 
+- [How To - CSS Arrows](https://www.w3schools.com/howto/howto_css_arrows.asp)
+- [How To - Triangles](https://www.w3schools.com/howto/howto_css_shapes.asp)
 - [Horizontal Slider Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html)
 
 For toggle switches:

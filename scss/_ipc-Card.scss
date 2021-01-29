@@ -70,6 +70,28 @@
   transform: translateY(-46%);
 }
 
+.ipc-Card_prices .slider .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  padding: 1px;
+
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.ipc-Card_prices .slider .arrow.left {
+  margin-right: 10px;
+  border-right: 8px solid var(--clr-slider-bar-full);
+
+  transform: translateY(2px);
+}
+
+.ipc-Card_prices .slider .arrow.right {
+  border-left: 8px solid var(--clr-slider-bar-full);
+  transform: translateY(2px);
+}
+
 /* the price */
 .ipc-Card_prices > p:last-of-type {
   font-size: var(--rs-14);
