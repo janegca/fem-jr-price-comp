@@ -32,7 +32,24 @@
       <div class="ipc-Card">
         <div class="ipc-Card_prices">
           <p><span id="views">10K</span> pageviews</p>
-          <div id="slider">Slider controller will go here</div>
+          <div class="slider">
+            <div class="slider_rail">
+              <div
+                id="sliderValue"
+                class="slider_thumb"
+                role="slider"
+                tabindex="0"
+                aria-valuemin="0"
+                aria-valuemax="4"
+                aria-valuenow="0"
+                aria-labelledby="views"
+              >
+                <!-- to create the arrows -->
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
           <p>
             <strong>$<span id="price">8.00</span></strong> / month
           </p>

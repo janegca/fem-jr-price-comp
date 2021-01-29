@@ -1,4 +1,4 @@
-/* Styling for the ipc-Card component */
+/* -- Styling for the ipc-Card component -- */
 .ipc-Card {
   width: clamp(var(--width-min), var(--width-avg), var(--width-max));
   padding-top: var(--rs-34);
@@ -21,17 +21,56 @@
   margin-top: var(--rs-34);
 }
 
-/* the Pricing section */
+/* -- the Pricing section -- */
 .ipc-Card_prices > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   line-height: 40px;
 }
 
+/* page views */
 .ipc-Card_prices > p:first-of-type {
   font-weight: var(--fw-bold);
   text-transform: uppercase;
 }
 
+/* the slider */
+.ipc-Card_prices .slider {
+  display: flex;
+
+  height: var(--rs-40);
+  margin-top: var(--rs-24);
+}
+
+.ipc-Card_prices .slider_rail {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  margin: var(--rs-16) 0;
+
+  border-radius: 10px;
+  background-color: var(--clr-slider-bar-empty);
+}
+
+.ipc-Card_prices .slider_thumb {
+  position: absolute;
+  left: 45%;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: var(--clr-slider-bg);
+
+  transform: translateY(-46%);
+}
+
+/* the price */
 .ipc-Card_prices > p:last-of-type {
   font-size: var(--rs-14);
 }
@@ -42,7 +81,7 @@
   color: var(--clr-cta-bg);
 }
 
-/* the Billing section */
+/* -- the Billing section -- */
 .ipc-Card_billing {
   display: flex;
   justify-content: space-evenly;
@@ -94,7 +133,7 @@
   opacity: 0;
 }
 
-/* the Call to Action section */
+/* -- the Call to Action section -- */
 .ipc-Card_cta {
   border-top: 2px solid var(--clr-slider-bar-empty);
 }

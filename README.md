@@ -52,6 +52,8 @@ applied to all prices.
    - JS to add/remove the `visually-hidden` class on the span holding the word
      _discount_
 1. how to create the slider?
+   - set bg colour based on value using JS ie value 0, no hightlight; value 1,
+     25% highlight, etc. as a gradient with stops value setting stops?
 1. how to create the toggle switch?
 1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as
    per the design, originally tried using a `ul` but each item would have need
