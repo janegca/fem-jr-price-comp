@@ -16,7 +16,7 @@ const prices = [
   ["1M", 36],
 ];
 
-console.log("prices: ", prices, prices[3][0], prices[3][1]);
+console.table(prices);
 
 /*
     Toggle Button
