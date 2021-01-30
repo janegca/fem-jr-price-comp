@@ -49,10 +49,10 @@
      min: 327px/ 375px = 87.2% or 87.2vw, 327/16 = 20.43rem
      max: 540px/1440px = 37.5% or 37.5vw, 540/16 = 33.75rem
      diff: (540-327)/(1440-375) = 15.5% or 15.5vw,
-     avg: 87.2vw - 15.5vw = 71.7vw */
+     avg: 87vw - 16vw = 71vw */
   --width-min: 20.43rem;
   --width-max: 33.75rem;
-  --width-avg: 72vw;
+  --width-avg: 71vw;
 }
 
 h1,
