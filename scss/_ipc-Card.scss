@@ -214,16 +214,16 @@
     font-size: var(--rs-14);
   }
 
+  .ipc-Card_prices > .slider .arrow {
+    transform: unset;
+  }
+
   .ipc-Card_prices > p:last-of-type {
     font-size: var(--rs-16);
   }
 
   .ipc-Card_prices > p > strong {
     font-size: var(--rs-40);
-  }
-
-  .ipc-Card_billing > p:last-of-type > span {
-    outline: 1px solid red;
   }
 
   .ipc-Card_cta {
