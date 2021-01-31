@@ -28,6 +28,9 @@
 }
 
 @media (min-width: 600px) {
+  .ipc-Intro > h1 {
+    font-size: var(--rs-28);
+  }
   .ipc-Intro > div > p {
     display: inline-block;
     font-size: var(--rs-15);
