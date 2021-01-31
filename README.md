@@ -31,11 +31,12 @@ applied to all prices.
 | ---------------- | --------------------- | ------ | --------------------- |
 | ipc              | namespace             | div    | ipc-Intro ipc-Card    |
 | ipc-Intro        | header and details    | header | h1 p                  |
-| ipc-Card         | holds the slider, cta | div    | ipc-Card\_\*          |
+| ipc-Card         | holds the slider, cta | div    | ipc-Card\_\* #ipcCard |
 | ipc-Card_prices  | price ranges          | ul     | #views #slider #price |
 | ipc-Card_billing | billing panel         | div    | p button p span       |
 | ipc-Card_cta     | call to action panel  | div    | [p > img] button      |
 
+- id's (#) are used for any element targeted by JS
 - body has a two background images
 - the ipc card has a shadow
 - the slider button has a coloured shadow
@@ -53,24 +54,26 @@ applied to all prices.
      _discount_
 1. how to create the slider?
    - put together using ideas from tutorials and examples (see References)
-   - set bg colour based on value using JS ie value 0, no hightlight; value 1,
-     25% highlight, etc. as a gradient with stops value setting stops?
+     - gc-Slider class, JS used to update gradient colour of rail
+     - works in 3 modern browsers: Firefox, Chrome, Edge
+       - required some code duplication as needed two polyfill selectors:
+         -moz-range-thumb and -webkit-slider-thumb
 1. how to create the toggle switch?
    - put together using ideas from tutorials (see References)
 1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as
-   per the design, originally tried using a `ul` but each item would have need
-   custom positioning anyways, making CSS code messier
+   per the design, originally tried using a `ul` but each item would have needed
+   custom positioning anyway, making CSS code messier
 
 References:
 
-For slider bar:
+For the slider:
 
 - [CSS Custom Properties - Dynamic Changes with and without Javascript](https://vanseodesign.com/css/custom-properties-and-javascript/)
 - [Customizing Cross-Browser Range Inputs with CSS and Javascript](https://css-tricks.com/custom-interactive-range-inputs/)
 - [MDN: \<input type="range"\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 - [Style Input Range](https://www.cssportal.com/style-input-range/)
 
-For toggle switches:
+For the toggle switch:
 
 - [Toggle Button Switches](https://heydon.github.io/inclusive-components-demos/toggle-buttons/switches.html)
 - [Theme Switching Toggle](https://codepen.io/SaraSoueidan/pen/jpBbrq)

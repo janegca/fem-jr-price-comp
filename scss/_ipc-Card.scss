@@ -1,4 +1,8 @@
-/* -- Styling for the ipc-Card component -- */
+/* -- Styling for the ipc-Card component 
+        changes to the slider thumb must be made to two selector groups:
+             -moz-range-thumb
+             -webkit-slider-thumb
+   -- */
 .ipc-Card {
   --discount: 0.25;
 
@@ -107,7 +111,7 @@
   height: 40px;
 
   border-radius: 50%;
-  background-image: url("icon-slider.svg");
+  background-image: url("../images/icon-slider.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--clr-bg);
@@ -167,6 +171,10 @@
 
 .ipc-Card_billing > button:hover {
   background-color: var(--clr-slider-bg);
+}
+
+.ipc-Card_billing > button:focus {
+  outline: none;
 }
 
 .ipc-Card_billing > button[aria-checked="true"] {
