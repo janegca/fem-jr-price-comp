@@ -24,6 +24,7 @@ let gradStop = getComputedStyle(slider).getPropertyValue("--gradient-stop");
 
 // Set to true when user selects Yearly Billing
 let wantsDiscount = false;
+let currentIndex = 0;
 
 // Add event listeners
 document.addEventListener("DOMContentLoaded", () => {
@@ -47,6 +48,8 @@ function updatePage(idx) {
 
   gradStop = prices[idx][2];
   slider.style.setProperty("--gradient-stop", `${gradStop}%`);
+
+  currentIndex = idx;
 }
 
 /*
@@ -60,5 +63,7 @@ toggles.forEach((toggle) => {
     toggle.setAttribute("aria-checked", !checked);
 
     wantsDiscount = !wantsDiscount;
+
+    updatePage(currentIndex);
   });
 });

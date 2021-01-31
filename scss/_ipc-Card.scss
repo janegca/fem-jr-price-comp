@@ -236,12 +236,38 @@
     font-size: var(--rs-14);
   }
 
-  .ipc-Card_prices > p:last-of-type {
-    font-size: var(--rs-16);
+  .ipc-Card_prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+      "views   price"
+      "slider slider";
   }
 
   .ipc-Card_prices > p > strong {
     font-size: var(--rs-40);
+    margin-right: var(--rs-08);
+  }
+
+  .ipc-Card_prices > p:first-of-type {
+    grid-area: views;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+
+  .ipc-Card_prices > p:last-of-type {
+    grid-area: price;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: var(--rs-16);
+  }
+
+  .ipc-Card #slider {
+    grid-area: slider;
   }
 
   .ipc-Card_billing span:last-of-type::after {
