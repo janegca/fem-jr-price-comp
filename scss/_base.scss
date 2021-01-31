@@ -22,8 +22,7 @@ body {
   /* 'fix' the images to the viewport */
   background-attachment: fixed;
 
-  background-image: url(../images/pattern-circles.svg),
-    url(../images/bg-pattern.svg);
+  background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: center, 0;
   background-position-y: 57px, 0;
