@@ -197,10 +197,6 @@
   color: var(--clr-discount-fg);
 }
 
-.ipc-Card_billing > p:last-of-type > span {
-  opacity: 0;
-}
-
 /* -- the Call to Action section -- */
 .ipc-Card_cta {
   border-top: 2px solid var(--clr-slider-bar-empty);
@@ -240,16 +236,16 @@
     font-size: var(--rs-14);
   }
 
-  .ipc-Card_prices > .slider .arrow {
-    transform: unset;
-  }
-
   .ipc-Card_prices > p:last-of-type {
     font-size: var(--rs-16);
   }
 
   .ipc-Card_prices > p > strong {
     font-size: var(--rs-40);
+  }
+
+  .ipc-Card_billing span:last-of-type::after {
+    content: attr(data-text);
   }
 
   .ipc-Card_cta {

@@ -50,8 +50,6 @@ applied to all prices.
 1. how to handle discount pricing?
    - JS to modify cost if yearly billing selected
    - JS to update the `views` and `price` when the slider is moved
-   - JS to add/remove the `visually-hidden` class on the span holding the word
-     _discount_
 1. how to create the slider?
    - put together using ideas from tutorials and examples (see References)
      - gc-Slider class, JS used to update gradient colour of rail
@@ -60,6 +58,8 @@ applied to all prices.
          -moz-range-thumb and -webkit-slider-thumb
 1. how to create the toggle switch?
    - put together using ideas from tutorials (see References)
+   - used a `pseudo-element` and a `data-*` attribute to hide and show the word
+     _discount_ in the billing section based on screen size
 1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as
    per the design, originally tried using a `ul` but each item would have needed
    custom positioning anyway, making CSS code messier
@@ -78,3 +78,7 @@ For the toggle switch:
 - [Toggle Button Switches](https://heydon.github.io/inclusive-components-demos/toggle-buttons/switches.html)
 - [Theme Switching Toggle](https://codepen.io/SaraSoueidan/pen/jpBbrq)
 - [Toggle switch](https://piccalil.li/tutorial/solution-002-toggle-switch)
+
+For hiding/showing the word 'discount':
+
+- [How to change <span> text in CSS media query](https://stackoverflow.com/questions/55975602/how-to-change-span-text-in-css-media-query)
