@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="style.min.css" />
     <!-- <script src="scripts/slider.js" defer></script> -->
-    <script src="scripts/script.js" defer></script>
+    <script src="script.js" defer></script>
 
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
@@ -31,26 +31,18 @@
         </div>
       </header>
 
-      <div class="ipc-Card">
+      <div class="ipc-Card" id="ipcCard">
         <div class="ipc-Card_prices">
           <p><span id="views">10K</span> pageviews</p>
-          <div class="slider">
-            <div class="slider_rail">
-              <div
-                id="sliderValue"
-                class="slider_thumb"
-                role="slider"
-                tabindex="0"
-                aria-valuemin="0"
-                aria-valuemax="4"
-                aria-valuenow="0"
-                aria-labelledby="views"
-              >
-                <i class="arrow left"></i>
-                <i class="arrow right"></i>
-              </div>
-            </div>
-          </div>
+          <input
+            type="range"
+            class="gc-Slider"
+            id="slider"
+            min="0"
+            max="4"
+            value="0"
+            step="1"
+          />
           <p>
             <strong>$<span id="price">8.00</span></strong> / month
           </p>

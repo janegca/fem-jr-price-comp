@@ -52,9 +52,11 @@ applied to all prices.
    - JS to add/remove the `visually-hidden` class on the span holding the word
      _discount_
 1. how to create the slider?
+   - put together using ideas from tutorials and examples (see References)
    - set bg colour based on value using JS ie value 0, no hightlight; value 1,
      25% highlight, etc. as a gradient with stops value setting stops?
 1. how to create the toggle switch?
+   - put together using ideas from tutorials (see References)
 1. CTA - had to load the `icon-check.svg`'s in the HTML in order to position as
    per the design, originally tried using a `ul` but each item would have need
    custom positioning anyways, making CSS code messier
@@ -63,9 +65,10 @@ References:
 
 For slider bar:
 
-- [How To - CSS Arrows](https://www.w3schools.com/howto/howto_css_arrows.asp)
-- [How To - Triangles](https://www.w3schools.com/howto/howto_css_shapes.asp)
-- [Horizontal Slider Example](https://www.w3.org/TR/wai-aria-practices-1.1/examples/slider/slider-1.html)
+- [CSS Custom Properties - Dynamic Changes with and without Javascript](https://vanseodesign.com/css/custom-properties-and-javascript/)
+- [Customizing Cross-Browser Range Inputs with CSS and Javascript](https://css-tricks.com/custom-interactive-range-inputs/)
+- [MDN: \<input type="range"\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+- [Style Input Range](https://www.cssportal.com/style-input-range/)
 
 For toggle switches:
 

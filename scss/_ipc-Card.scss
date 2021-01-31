@@ -1,5 +1,7 @@
 /* -- Styling for the ipc-Card component -- */
 .ipc-Card {
+  --discount: 0.25;
+
   width: clamp(var(--width-min), var(--width-avg), var(--width-max));
   padding-top: var(--rs-34);
   padding-bottom: var(--rs-34);
@@ -34,77 +36,93 @@
 
 /* page views */
 .ipc-Card_prices > p:first-of-type {
+  margin-bottom: var(--rs-24);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
 }
 
 /* the slider */
-.ipc-Card_prices .slider {
-  display: flex;
+.ipc-Card_prices .gc-Slider {
+  /* Custom properties for slider */
+  --rail-width: 100%;
+  --rail-height: 8px;
 
-  height: var(--rs-40);
-  margin-top: var(--rs-24);
-}
+  --clr-bar-empty: hsl(226, 68%, 95%);
+  --clr-bar-full: hsl(174, 77%, 80%);
+  --clr-bg: hsl(174, 86%, 45%);
+  --clr-thumb-hover: hsl(174, 73%, 70%);
 
-.ipc-Card_prices .slider_rail {
-  /* JS will be used to update the gradient-stop 
-     point for the slider background fill 
-   */
+  --clr-shadow: 0px 15px 30px 0px var(--clr-bg);
+  --clr-shadow-neutral: 0px 20px 30px -5px hsla(230, 29%, 61%, 0.152);
+
   --gradient-stop: 50%;
 
-  position: relative;
-  width: 100%;
-  height: 8px;
-  margin: var(--rs-16) 0;
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: var(--rail-width);
+  height: var(--rail-height);
 
   border-radius: 10px;
 
   background: linear-gradient(
     to right,
-    var(--clr-slider-bar-full) var(--gradient-stop),
-    var(--clr-slider-bar-empty) calc(100% - var(--gradient-stop))
+    var(--clr-bar-full) var(--gradient-stop),
+    var(--clr-bar-empty) calc(100% - var(--gradient-stop))
   );
 }
 
-.ipc-Card_prices .slider_thumb {
-  --shadow-color: 0px 15px 30px 0px var(--clr-slider-bg);
-  --shadow-neutral: 0px 20px 30px -5px hsla(230, 29%, 61%, 0.152);
+.ipc-Card_prices .gc-Slider:focus {
+  outline: none;
+}
 
-  position: absolute;
-  left: 45%;
+.ipc-Card_prices .gc-Slider::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
 
-  display: block;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--clr-bg);
+  box-shadow: var(--clr-shadow), var(--clr-shadow-neutral);
+
+  cursor: pointer;
+}
+
+.ipc-Card_prices .gc-Slider:hover::-moz-range-thumb {
+  background-color: var(--clr-thumb-hover);
+}
+
+.ipc-Card_prices .gc-Slider:focus::-moz-range-thumb {
+  background-color: var(--clr-bg);
+  cursor: grab;
+}
+
+.ipc-Card_prices .gc-Slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
   width: 40px;
   height: 40px;
 
   border-radius: 50%;
-  background-color: var(--clr-slider-bg);
-  box-shadow: var(--shadow-color), var(--shadow-neutral);
+  background-image: url("icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--clr-bg);
+  box-shadow: var(--clr-shadow), var(--clr-shadow-neutral);
 
-  transform: translateY(-46%);
   cursor: pointer;
 }
 
-.ipc-Card_prices .slider .arrow {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  padding: 1px;
-
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
+.ipc-Card_prices .gc-Slider:hover::-webkit-slider-thumb {
+  background-color: var(--clr-thumb-hover);
 }
 
-.ipc-Card_prices .slider .arrow.left {
-  margin-right: 10px;
-  border-right: 8px solid var(--clr-slider-bar-full);
-
-  transform: translateY(2px);
-}
-
-.ipc-Card_prices .slider .arrow.right {
-  border-left: 8px solid var(--clr-slider-bar-full);
-  transform: translateY(2px);
+.ipc-Card_prices .gc-Slider:focus::-webkit-slider-thumb {
+  background-color: var(--clr-bg);
+  cursor: grab;
 }
 
 /* the price */
