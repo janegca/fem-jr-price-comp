@@ -18,7 +18,6 @@ let price = document.getElementById("price");
 const slider = document.getElementById("slider");
 
 // Get the document styles and discount value
-const styles = getComputedStyle(document.documentElement);
 const discount = getComputedStyle(card).getPropertyValue("--discount");
 let gradStop = getComputedStyle(slider).getPropertyValue("--gradient-stop");
 
